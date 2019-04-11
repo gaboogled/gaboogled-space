@@ -11,6 +11,15 @@ _build/
 build/
 _drafts
 .old*
+_data/
+_images/
+_includes/
+_journals/
+_layouts/
+_scss/
+_site/
+admin/
+tools/
 
 # Compiled source #
 ###################
