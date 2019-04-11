@@ -1,0 +1,46 @@
+---
+# Leave this front matter block to trigger Jekyll processing
+plate_id: main-grid-root
+type: layout
+layout: kt-grid--root
+---
+
+<template id="">{% include header-base-mobile.html %}</template>
+
+<template id="main-grid-root"><!-- begin: Main Grid Container -->
+<div class="kt-grid kt-grid--hor kt-grid--root">
+
+    <!-- begin:: Page -->
+    <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver kt-page">
+        {% include aside-base.html %}
+        <!-- begin:: Wrapper -->
+        <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-wrapper" id="kt_wrapper">
+            {% include header-base.html %}
+            <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor">
+                {% include subheader-subheader-v1.html %}
+                {% include content-base.html %}
+            </div>
+            {% include footer-base.html %}
+        </div>
+        <!-- end:: Wrapper -->
+    </div>
+    <!-- end:: Page -->
+</div>
+</template><!-- end:: Main Grid Container -->
+
+<template id="topbar-offcanvas-panel">{% include offcanvas-quick-actions.html %}</template>
+
+<template id="quick-panel">{% include layout-quick-panel.html %}</template>
+<template id="scroll-top">{% include layout-scrolltop.html %}</template>
+<template id="toolbar-layout">{% include layout-toolbar.html %}</template>
+# ------------------------------------------------------------------------------------------
+# Partial List:
+# header-base-mobile.html
+# aside-base.html
+# header-base.html
+# subheader-subheader-v1.html
+# content-base.html
+# footer-base.html
+# offcanvas-quick-actions.html
+# layout-scrolltop.html
+# layout-toolbar.html

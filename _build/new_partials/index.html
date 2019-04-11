@@ -1,0 +1,42 @@
+---
+# Leave this front matter block to trigger Jekyll processing
+plate_id: index
+type: page
+layout: kt-grid--root
+---
+
+<!doctype html>
+    <html class="no-js" lang="en">
+
+<template template id="head-meta">
+    <head>
+      <meta charset="utf-8">
+      <title>{{ site.developer }} : {{ site.company }} {{ site.desc }} {{ site.title }} | {{ site.env }}</title>
+      <meta name="description" content="{{ site.developer }}">
+      <link rel="manifest" href="site.webmanifest">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <link rel="apple-touch-icon" href="resources/images/icon.png">
+      <link href="./css/gaboogled.css" rel="stylesheet" type="text/css" />
+      <link rel="shortcut icon" href="./assets/media/logos/favicon.ico" />
+      <meta name="theme-color" content="#ffffff">
+    </head>
+</template>
+    <!-- begin::Body -->
+    <body class="kt-page--loading-enabled kt-page--loading kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-aside--enabled kt-aside--fixed kt-footer--fixed kt-page--loading" >
+        {% include layout-page-loader.html %}
+        {% include layout.html %}
+    </body>
+    <!-- end::Body -->
+</html>
+# ------------------------------------------------------------------------------
+# Partial List:
+# layout-page-loader.html
+# aside-base.html
+# header-base.html
+# subheader-subheader-v1.html
+# content-base.html
+# footer-base.html
+# offcanvas-quick-actions.html
+# layout-scrolltop.html
+# layout-toolbar.html

@@ -1,0 +1,15 @@
+---
+# Leave this front matter block to trigger Jekyll processing
+plate_id: body_default--loading
+type: component
+layout: kt-grid--root
+---
+
+    <template id="body--loading">
+    <body class="kt-page--loading-enabled kt-page--loading kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-aside--enabled kt-aside--fixed kt-footer--fixed kt-page--loading" >
+
+        {% include layout-page-loader.html %}
+        {% include layout.html %}
+
+    </body>
+    </template>

@@ -1,0 +1,28 @@
+---
+# Leave this front matter block to trigger Jekyll processing
+plate_id: head-meta-day
+type: component
+layout: kt-grid--root
+
+---
+
+<template id="{{ page.plate_id }}">
+<head>
+  <meta charset="utf-8">
+  <title>{{ site.developer }} : {{ site.company }} {{ site.desc }} {{ site.title }} | {{ site.env }}</title>
+  <meta name="description" content="{{ site.developer }} : {{ site.company }} {{ site.desc }} {{ site.title }} | {{ site.env }}">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="apple-touch-icon" href="resources/images/icon.png">
+  <link href="./css/gaboogled.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="./assets/media/logos/favicon.ico" />
+  <meta name="theme-color" content="#ffffff">
+</head>
+</template>
+
+<!------------------------------------------------------------------------------
+# Jekyll Variable Output:
+# Page plate_id: {{ page.plate_id }}
+# Site  site_developer: {{ site.developer }} : {{ site.company }} {{ site.desc }} {{ site.title }} | {{ site.env }}
+# _head_meta.html --->
