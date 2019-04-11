@@ -2,7 +2,7 @@
   "name": "gaboogled-space",
   "version": "1.0.0",
   "description": "Creative Technology \"inspired by Skittles ...\"",
-  "main": "src/index.js",
+  "main": "../_site/_src/index.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/gaboogled/space.git"
@@ -64,6 +64,6 @@
   "bugs": {
     "url": "https://github.com/gaboogled/space/issues"
   },
-  "homepage": "https://github.com/gaboogled/space#readme",
+  "homepage": "https://github.com/gaboogled/space",
   "keywords": []
 }
