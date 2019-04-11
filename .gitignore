@@ -10,6 +10,7 @@ node_modules
 _build/
 build/
 _drafts
+.old*
 
 # Compiled source #
 ###################
