@@ -14,8 +14,8 @@ module.exports = {
       logo: './icon.png',
     }),
     new HtmlWebpackPlugin({
-      template: './_src/template/default_template.html',
-      filename: '../_layouts/default_layout.html',
+      template: './_src/template/_template_default.html',
+      filename: '../_layouts/_layout_default.html',
     }),
     new ExtractTextPlugin('[name].css'),
     new CopyWebpackPlugin([{

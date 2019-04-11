@@ -10,11 +10,11 @@ module.exports = {
   plugins: [
     new CriticalPlugin({
       base: path.resolve('_layouts'),
-      src: 'default.html',
+      src: '_layout_default.html',
       inline: true,
       minify: true,
-      dest: '_layouts/default.html',
-      css: ['assets/app.css'],
+      dest: '_layouts/_layout_default.html',
+      css: ['assets/simple.css'],
     }),
   ],
 };

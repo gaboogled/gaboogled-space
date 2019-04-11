@@ -9,6 +9,7 @@ info.php
 node_modules
 _build/
 build/
+_drafts
 
 # Compiled source #
 ###################
