@@ -1,58 +1,49 @@
+title: Gaboogled Space
+url: "https://gaboogled.github.io/space/"
+markdown: kramdown
+permalink: /:title
 defaults               :
  -
   scope                :
     path               : "" # an empty string here means all files in the project
-  values               :
-    developer          : "George Freeney-Jones"
-      company          : "Gaboogled"
-      desc             : "Creative Technology | \"Inspired by Skittles\""
-      title            : "simple Material Bootstrap Theme"
-      copyright        : "2019"
-      appenv           : "development"
-      cssmode          : "day"
-      framework        : "2"
-      layout           : "simple-default-grid-layout--root"
 
-# What do it look like?
-      skin             : "./css/simple.css"
-      skin_pref        : "default"
-      gtag             : "xxxxxxxx"
-      small-logo       : "./imgs/simple-small-logo.png"
-      github           : "gaboogled"
-      gitpage          : "https://github.com/gaboogled"
-      pipefy           : "https://app.pipefy.com/organizations/240226"
+    # Where things are
+      source                 : ./../_site/_src
+      destination            : ./../_site
+      collections_dir        : _collections
+      plugins_dir            : _plugins
+      layouts_dir            : _layouts
+      data_dir               : _data
+      includes_dir           : _includes
+      sass_dir               : _scss
+      collections:
+    posts:
+      output             : true
 
-# Where things are
-source                 : ./../_site/_src
-destination            : ./../_site
-collections_dir        : _collections
-plugins_dir            : _plugins
-layouts_dir            : _layouts
-data_dir               : _data
-includes_dir           : _includes
-sass_dir               : _scss
-collections:
-  posts:
-    output             : true
+    # Handling Reading
+      safe                   : false
+      include                : [".htaccess"]
+      exclude                : [".DS_Store", "gulpfile.js", "node_modules", "package.json", "Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
+      keep_files             : [".git", ".svn"]
+      encoding               : "utf-8"
+      markdown_ext           : "markdown,mkdown,mkdn,mkd,md"
+      strict_front_matter    : false
 
-# Handling Reading
-safe                   : false
-include                : [".htaccess"]
-exclude                : [".DS_Store", "gulpfile.js", "node_modules", "package.json", "Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
-keep_files             : [".git", ".svn"]
-encoding               : "utf-8"
-markdown_ext           : "markdown,mkdown,mkdn,mkd,md"
-strict_front_matter    : false
-
-# Filtering Content
-show_drafts            : null
-limit_posts            : 0
-future                 : false
-unpublished            : false
+    # Filtering Content
+      show_drafts            : null
+      limit_posts            : 0
+      future                 : false
+      unpublished            : false
 
 # Plugins & Gems
 whitelist              : []
 plugins                : ["jekyll-autoprefixer"]
+jekyll-bliss           :
+  build-folder         : ../_site/_build/jekyll
+  debug                : false
+  quiet                : false
+  delete-build-folder  : false
+  livereload           : false
 gems                   : ["jekyll-babel"]
 
 # Conversion
@@ -82,12 +73,6 @@ liquid:
   error_mode           : warn
   strict_filters       : false
   strict_variables     : false
-jekyll-bliss           :
-  build-folder         : _build
-  debug                : false
-  quiet                : false
-  delete-build-folder  : false
-  livereload           : false
 
 # Markdown Processors
 rdiscount:
