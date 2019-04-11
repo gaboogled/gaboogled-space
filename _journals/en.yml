@@ -1,9 +1,0 @@
-home:
-  header:
-    headline: Your beautiful headline
-    call_to_action:
-      title: Check out our blog
-      link: /journals
-
-footer:
-  simple: 'It's just that <span class="accent">simple!</span>'
