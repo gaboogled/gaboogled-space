@@ -3,7 +3,7 @@ home:
     headline: Your beautiful headline
     call_to_action:
       title: Check out our blog
-      link: /blog
+      link: /journals
 
 footer:
-  love: 'Made with <span class="accent">❤</span>'
+  simple: 'It's just that <span class="accent">simple!</span>'
