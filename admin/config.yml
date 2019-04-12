@@ -1,5 +1,5 @@
 backend:
-  name: gaboogled-space
+  name: git-gateway
   branch: master
 
 publish_mode: editorial_workflow
@@ -9,10 +9,10 @@ public_folder: "assets/images"
 
 collections:
   - name: "blog"
-    label: "Journal"
-    folder: "_posts"
-    create: true
-    slug: "{{slug}}-{{month}}-{{day}}-{{year}}"
+    label: "Blog"
+    folder: "_i18n/en/_posts"
+    create: true 
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
       preview: false
     fields:
@@ -23,8 +23,8 @@ collections:
       - {label: "Categories", name: "categories", widget: "string"}
       - {label: "Author", name: "author", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - name: 'text'
-      label: 'Text'
+  - name: 'text'
+    label: 'Text'
     delete: false # Prevent users from deleting documents in this collection
     editor:
       preview: false

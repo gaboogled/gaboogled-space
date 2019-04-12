@@ -1,0 +1,111 @@
+/* : Move to _site/_scss directory */
+//
+// Default simple Theme Setting Adjusts from Bootstrap's Reboot.css
+//
+$body-bg = #fff; // 2
+$body-color = #fff;
+
+/* Disable ugly boxes around images in IE10 */
+a img{
+  border: 0px;
+}
+
+::-moz-selection {
+  background-color: #3284FF;
+  color: #fff;
+}
+//
+// Setup simple Material io Variables
+//
+//
+
+
+// Setup simple Theme Boostrap 4 Variables
+//
+// Page
+$smpl-page-bg-color: #f2f3f8;
+$smpl-page-padding: (
+	desktop: 25px,
+	mobile: 15px
+);
+//
+// Layout
+$smpl-aside-default-width: 260px;
+$smpl-aside-minimize-width: 78px;
+$smpl-aside-offcanvas-width: 255px;
+//
+// State colors
+$smpl-state-colors: (
+    //
+		// Keen states
+    brand: (
+        base: #fff,
+        inverse: #1155cc
+    ),
+    metal: (
+        base: #d3dae6,
+        inverse: #586272
+    ),
+    light: (
+        base: #ffffff,
+        inverse: #282a3c
+    ),
+    dark: (
+        base: lighten(#4c467a, 12%),
+        inverse: #ffffff
+    ),
+    accent: (
+        base: #00c5dc,
+        inverse: #ffffff
+    ),
+    focus: (
+        base: #9816f4,
+        inverse: #ffffff
+    ),
+    //
+    // Bootstrap states
+    primary: (
+        base: #5867dd,
+        inverse: #ffffff
+    ),
+		secondary: (
+		    base: #fff,
+				invers: #ffffff
+				),
+    success: (
+        base: #1dc9b7,
+        inverse: #ffffff
+    ),
+    info: (
+        base: #5578eb,
+        inverse: #ffffff
+    ),
+    warning: (
+        base: #ffb822,
+        inverse: #111111
+    ),
+    danger: (
+        base: #fd397a,
+        inverse: #ffffff
+    ),
+		dark (
+		    base: #fff,
+				inverse: #fff
+		),
+		light (
+		base: #ffffff
+		inverse
+		)
+);
+//
+// Layout Skins
+$smpl-layout-skins: (
+	navy: #4d65dc,
+	gray: #242939,
+	light: #ffffff,
+	red: #FF3424,
+	blue: #3284FF,
+	yellow: #FFBB00,
+	green: #26B14C,
+	purple: #fff
+);
